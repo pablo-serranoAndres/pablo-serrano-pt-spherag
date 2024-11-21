@@ -1,0 +1,21 @@
+@import "@styles/variables";
+.button {
+  &__outlined {
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    border: solid 1px $secondary-color;
+    border-radius: 25px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+  }
+
+  &__outlined:hover {
+    background-color: $secondary-color;
+    color: white;
+  }
+}
