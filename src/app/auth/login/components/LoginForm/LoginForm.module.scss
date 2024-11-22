@@ -2,10 +2,9 @@
 
 .container {
   display: flex;
-  flex-direction: co;
   align-items: center;
   justify-content: center;
-  border: solid white 1px;
+  border: solid $background-primary-color 1px;
   background-color: $primary-color;
   height: 100vh;
 }
@@ -13,7 +12,7 @@
 .form {
   border: solid $primary-color 3px;
   border-radius: 15px;
-  background-color: white;
+  background-color: $background-primary-color;
   padding: 35px;
   display: flex;
   flex-direction: column;
@@ -21,12 +20,26 @@
   gap: 20px;
 
   &__title {
-    color: black;
+    color: $text-black;
   }
   &__user {
     width: 250px;
   }
   &__pass {
     width: 250px;
+  }
+  &__recover:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  &__feedback {
+    color: $text-error;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    padding: 25px;
   }
 }

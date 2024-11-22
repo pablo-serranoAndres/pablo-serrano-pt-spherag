@@ -1,12 +1,16 @@
+@import "@styles/variables";
+
 .inputContainer {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  border: solid 1px lightblue;
+  border: solid 1px $primary-color;
   border-radius: 10px;
-
+  select {
+    width: 100%;
+  }
   input {
     padding: 2px;
     width: 100%;

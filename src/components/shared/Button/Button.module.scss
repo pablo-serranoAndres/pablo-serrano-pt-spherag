@@ -1,12 +1,15 @@
 @import "@styles/variables";
+
 .button {
   &__outlined {
     width: 100%;
     padding: 15px;
+    display: flex;
+    justify-content: center;
     background-color: transparent;
-    border: solid 1px $secondary-color;
+    border: solid 1px $primary-color;
     border-radius: 25px;
-    color: black;
+    color: $text-primary-color;
     text-align: center;
     cursor: pointer;
     position: relative;

@@ -1,11 +1,12 @@
-import { ChangeEventHandler } from "react";
+import { ChangeEventHandler, ReactNode } from "react";
 
 interface InputProps {
-  name: string;
-  value: string;
-  label: string;
-  type: "text" | "textarea" | "password";
-  onChange: ChangeEventHandler<HTMLInputElement>;
+  type: "text" | "select" | "password";
+  name?: string;
+  value?: string;
+  label?: string;
+  options?: ReactNode[];
+  onChange?: ChangeEventHandler<HTMLInputElement>;
 }
 
 export default InputProps;
