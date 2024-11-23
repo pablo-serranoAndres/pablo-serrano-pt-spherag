@@ -1,0 +1,25 @@
+@import "@styles/variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  :first-child {
+    font-size: 20px;
+    color: $text-primary-color;
+  }
+  &__breadscrums {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 5px;
+    font-size: 12px;
+    color: $background-highlighted-color;
+  }
+}

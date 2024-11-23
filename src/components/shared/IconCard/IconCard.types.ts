@@ -1,8 +1,10 @@
-import { ReactNode } from "react";
-
-interface IconCardProps {
-  variant: "user" | "noti" | "info";
-  text: string;
+export interface IconProps {
+  icon?: "user" | "noti" | "info" | "battery" | "signal" | "back";
+  color?: "#333d78" | "#35a086";
+  size?: number;
 }
 
-export default IconCardProps;
+export interface IconCardProps extends IconProps {
+  variant: "bgblank" | "bgblue" | "green";
+  text?: string;
+}
