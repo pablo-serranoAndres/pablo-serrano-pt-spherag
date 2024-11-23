@@ -47,7 +47,7 @@ const Input = ({ type, label, name, value, onChange, options }: InputProps) => {
       );
     case "select":
       return (
-        <div className={styles.inputContainer}>
+        <div className={styles.selectContainer}>
           <select>
             <option>{label}</option>
             {options &&

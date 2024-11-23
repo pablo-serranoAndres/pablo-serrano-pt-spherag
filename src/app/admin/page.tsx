@@ -1,4 +1,4 @@
-import { BorderMenu } from "@/components";
+import { BorderMenu } from "./components";
 import styles from "./page.module.scss";
 
 const AdminPage = () => {

@@ -2,8 +2,17 @@
 
 .container {
   background-color: $background-primary-color;
-  padding: 5px;
+  padding: 7px;
   border-radius: 5px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.text {
+  font-size: 15px;
+  color: $text-primary-color;
 }

@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
 interface IconCardProps {
+  variant: "user" | "noti" | "info";
   text: string;
-  icon: ReactNode;
 }
 
 export default IconCardProps;
